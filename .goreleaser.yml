@@ -13,11 +13,11 @@ builds:
       - amd64
     env:
       - CGO_ENABLED=0
-    main: cmd/cyclonus/main.go
+    main: cyclonus/cmd/cyclonus/main.go
     ldflags: -s -w
-      -X github.com/mattfenwick/cyclonus/pkg/cli.version={{.Version}}
-      -X github.com/mattfenwick/cyclonus/pkg/cli.gitSHA={{.Commit}}
-      -X github.com/mattfenwick/cyclonus/pkg/cli.buildTime={{.Date}}
+      -X github.com/astoycos/network-policy-api/cyclonus/pkg/cli.version={{.Version}}
+      -X github.com/astoycos/network-policy-api/cyclonus/pkg/cli.gitSHA={{.Commit}}
+      -X github.com/astoycos/network-policy-api/pkg/cli.buildTime={{.Date}}
       -extldflags "-static"
     flags: -tags netgo -installsuffix netgo
     binary: "cyclonus"
