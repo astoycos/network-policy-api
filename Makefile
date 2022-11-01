@@ -41,7 +41,7 @@ verify:
 	hack/verify-all.sh -v
 
 crd-e2e:
-	hack/e2e-crd.sh -v
+	hack/crd-e2e.sh -v
 
 ##@ Deployment
 install: manifests ## Install CRDs into the K8s cluster specified in ~/.kube/config.
@@ -56,5 +56,4 @@ docs:
  
 .PHONY: local-docs ## Deploy the docs locally 
 local-docs:
-	mkdocs serve
-	
+	mkdocs serve	

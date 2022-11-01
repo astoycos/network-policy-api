@@ -56,7 +56,6 @@ kind create cluster --name "${CLUSTER_NAME}" || res=$?
 for KUST_FOLDER in bases patches; do
   go run sigs.k8s.io/controller-tools/cmd/controller-gen rbac:roleName=manager-role crd paths=./apis/... output:crd:dir=./config/crd/bases output:stdout || res=$?
   kubectl kustomize config/crd | kubectl apply -f - || res=$?
-  # make install || res=$?
 
   # Temporary workaround for https://github.com/kubernetes/kubernetes/issues/104090
   sleep 8
