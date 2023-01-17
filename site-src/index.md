@@ -96,7 +96,6 @@ The AdminNetworkPolicy API is a
 project being built to improve and standardize cluster-wide security policy in k8s. In-progress implementations include Antrea (VMware) and Openshift (RedHat),
 If you are interested in contributing to or
 building an implementation using the AdminNetworkPolicy API then don’t hesitate to [get
-involved!](/contributing/community)
+involved](https://github.com/kubernetes-sigs/network-policy-api/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 [sig-network]: https://github.com/kubernetes/community/tree/master/sig-network
-
