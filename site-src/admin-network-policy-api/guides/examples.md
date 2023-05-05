@@ -1,12 +1,12 @@
 ## Example AdminNetworkPolicy API Object Definitions 
 
 These examples will start with the object yaml defintions used to implement the 
-[core use cases](../index.md#adminnetworkpolicy-api-user-stories). Please feel 
+[core use cases](../intro.md#adminnetworkpolicy-api-user-stories). Please feel 
 free to contribute more examples that may seem relevant to other users :-). 
 
 ### Sample Spec for Story 1: Deny traffic at a cluster level
 
-![Alt text](../images/explicit_deny.png?raw=true "Explicit Deny")
+![Alt text](../../images/explicit_deny.png?raw=true "Explicit Deny")
 
 ```yaml
 apiVersion: policy.networking.k8s.io/v1alpha1
@@ -29,7 +29,7 @@ spec:
 
 ### Sample Spec for Story 2: Allow traffic at a cluster level
 
-![Alt text](../images/explicit_allow.png?raw=true "Explicit Allow")
+![Alt text](../../images/explicit_allow.png?raw=true "Explicit Allow")
 
 ```yaml
 apiVersion: policy.networking.k8s.io/v1alpha1
@@ -62,7 +62,7 @@ spec:
 
 ### Story 3: Explicitly Delegate traffic to existing K8s Network Policy
 
-![Alt text](../images/delegation.png?raw=true "Delegate")
+![Alt text](../../images/delegation.png?raw=true "Delegate")
 
 ```yaml
 apiVersion: policy.networking.k8s.io/v1alpha1
@@ -92,7 +92,7 @@ spec:
 
 ### Story 4: Create and Isolate multiple tenants in a cluster  
 
-![Alt text](../images/tenants.png?raw=true "Tenants")
+![Alt text](../../images/tenants.png?raw=true "Tenants")
 
 ```yaml
 apiVersion: policy.networking.k8s.io/v1alpha1
@@ -138,7 +138,7 @@ spec:
 
 ### Story 5: Cluster Wide Default Guardrails
 
-![Alt text](../images/baseline.png?raw=true "Default Rules")
+![Alt text](../../images/baseline.png?raw=true "Default Rules")
 
 ```yaml
 apiVersion: policy.networking.k8s.io/v1alpha1
